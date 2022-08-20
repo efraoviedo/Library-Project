@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ .biblioteca {  
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 110px 150px 150px 150px 150px 50px;
+    grid-template-columns: 227px 112px 552px 240px 221px;
+    grid-template-areas: 
+       "header header header Books About"
+       "sidebar book book book book"
+       "sidebar authors authors new-book new-book"
+       "sidebar authors authors new-book new-book"
+       "sidebar authors authors new-book new-book"
+       "footer footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: yellow;
+    color: rgb(138, 23, 23);
+    display: flex;
+    place-items: center;
+    font-size: 21px;
+    padding-left: 28px;
+}
+
+.Books, .About {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    font-size: 18px;
+    background-color: yellow;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    width: 229px;
+    padding-left: 15px;
+    padding-top: 10px;
+    text-decoration: none;
+  margin-right: auto;
+    background-color: rgb(112, 112, 236);
+}
+
+#book {
+    grid-area: book;
+    height: 200px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#culture {
+    width: 200px;
+    height: 140px;
+    background-color: rgb(120, 221, 187);
+}
+
+.authors {
+    grid-area: authors;
+    background-color: brown;
+    display: grid;
+    grid-template-rows: 180px 180px;
+    grid-template-columns: 180px 180px;
+    row-gap: 38px;
+    padding-top: 15px;
+    padding-left: 35px;
+}
+
+.new-book {
+    grid-area: new-book;
+    padding-top: 60px;
+    background-color: brown;
+
+}
+
+button {
+height: 35px;
+width: 150px;
+border-radius: 28px;
+text-decoration: none;
+font-family: Arial;
+color: #fafafa;
+font-size: 17px;
+box-shadow: 6px 5px 24px #666666;
+background: #e0b7d3;
+background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+  
+}
+
+button:hover {
+    color: white;
+    background-color: pink;
+}
+
+footer {
+    grid-area: footer;
+    color: #fafafa;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 15px;
+    background-color: black;
+}
