@@ -11,6 +11,9 @@
 <div class="volver"><a href="Library.index.html" >X</a></div>
  <p>Agrega Un Nuevo Libro</p>
  <table align =center cellspacing=8>
+
+  <form action="novalidate">
+
       
    <th class="tabla">First Name:</th>
     <tr>
@@ -41,27 +44,39 @@
     <td class="line1">Categoria:</td>
     <td><input type="text" placeholder="Categoria"></td>
    </tr>
+
+   <th class="tabla">Email :</th>
+      <tr>
+        <label for="mail">
+        <td class="line1"> <span> email:</span></td>
+        <td><input type="email" id="mail" placeholder="pepito@gmail.com" name="mail" required minlength="8" /></td>
+        <td><span class="error" aria-live="polite"></span></td>
+        <td></label></td>
+      </tr>
   
    <th class="tabla">Phone Number:</th>
-   <tr>
-    <td class="line1">Phone Number:</td>
-    <td><input type="text" placeholder="Phone Number"></td>
-   </tr>
-  
-   <th class="tabla">Email :</th>
-   <tr>
-    <td class="line1">Email :</td>
-    <td><input type="text" placeholder="Email "></td>
-   </tr>
-   
-   <th class="tabla">Borrar Libro:</th>
-   <tr>
-    <td class="line1">Borrar Libro :</td>
-    <td><input button type="del" placeholder="del "></td>
-    <td><button class="btn-operator" id="clear"></button></td>
+     <tr>
+      <td class="line1">Phone Number:</td>
+      <td><input type="text" placeholder="Phone Number"></td>
      </tr>
-  </table>
+  
+   <th class="tabla">Borrar Libro:</th>
+     <tr>
+      <td class="line1">Borrar Libro :</td>
+      <td><input type="reset"value="reset"></td>
+     </tr>
+
+    <th class="tabla">submit:</th>
+     <tr>
+      <td class="line1">Submit :</td> -->
+      <td> <button style="width: 180px;height:40px">Submit</button>  </td>
+     </tr> 
+
+    </form>
+    </table>
 <h3 style="padding-bottom: 55px;" >Dev: Efrain Oviedo Torres</h3>
+
+<script src="js/Library.js"></script>
     
 </body>
 </html>
